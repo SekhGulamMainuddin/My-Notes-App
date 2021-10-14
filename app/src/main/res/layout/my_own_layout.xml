@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="16dp">
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="337dp"
+        android:layout_height="wrap_content"
+        android:background="#C4E8F8"
+        android:hint="Notes"
+        android:padding="16dp"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/priority"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="339dp"
+        android:layout_height="23dp"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TextView"
+        android:text="Description" />
+
+    <TextView
+        android:id="@+id/priority"
+        android:layout_width="32dp"
+        android:layout_height="56dp"
+        android:padding="10dp"
+        android:text="1"
+        app:layout_constraintBottom_toBottomOf="@id/TextView"
+        app:layout_constraintLeft_toRightOf="@id/TextView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/TextView"
+
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
